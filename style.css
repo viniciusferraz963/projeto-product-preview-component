@@ -1,0 +1,93 @@
+/*Configurações Globais*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*:root utilizado para adicionar variaveis para uso global dentro do CSS */
+:root {
+    --font1: "Montserrat", sans-serif;
+    --font2: "Fraunces", sans-serif;
+}
+
+/*Corpo da Página*/
+
+body {
+    background-color:hsl(30, 38%, 92%);
+}
+
+/*Seção de Produto*/
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 375px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+/*Imagem*/
+img {
+    width: 375px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*Titulo nv3*/
+h3 {
+    font-family: var(--font1);
+    margin: 15px 0px 15px 20px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/*Titulo nv2*/
+h2 {
+    font-size: 40px;
+    margin: 0px 0px 15px 20px;
+    line-height: 0.8em;
+}
+
+/*Parágrafo*/
+p {
+    width: 83%;
+    margin: 10px 0px 15px 20px;
+    font-size: 20px;
+
+    color: hsl(228, 12%, 48%);
+}
+
+/*Valor Atual*/
+.current-price {
+    font-family: var(--font2);
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+    font-size: 40px;
+    margin: 0px 15px 15px 20px;
+}
+
+/*Valor Antigo*/
+.old-price {
+    font-family: var(--font2);
+    color: gray;
+    text-decoration: line-through;
+}
+
+/*Botão p/ adicionar no carrinho*/
+.add-cart {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.add-cart:hover {
+    cursor: pointer;
+    background-color: hsl(158, 35%, 20%);
+    transition: 0.7s;
+}
